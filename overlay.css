@@ -1,0 +1,143 @@
+.overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: end;
+    box-sizing: border-box;
+    display: none;
+}
+.overlay.show{
+    display: flex;
+}
+.overlay__menu{
+    background-color: #fff;
+    width: 250px;
+    margin: 0%;
+    padding: 0%;
+    z-index: -2;
+}
+.overlay__close{
+    text-align: end;
+    margin: 24px;
+    font-size: 10px;
+    font-weight: 10;
+    position: relative;
+}
+.overlay__close:hover{
+    cursor: pointer;
+}
+.overlay__items{
+    margin: 34px;
+    padding: 0%;
+    position: relative;
+}
+.overlay__items li{
+    margin: 18px 0;
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0%;
+    font-size: 12px;
+    color: var(--text-color);
+}
+.language{
+    position: relative;
+}
+.language__country{
+    position: absolute;
+    top: 2px;
+    left: 24px;
+}
+.language__name{
+    font-size: 11px;
+    position: relative;
+    top: 10px;
+    left: 3.5px; 
+}
+.language__name:hover{
+    text-decoration: underline;
+}
+.overlay__items li:hover{
+    cursor: pointer;
+}
+.overlay__slider{
+    background-color: rgba(128, 128, 128, 0.1);
+    border-radius: 20px;
+    width: 196px;
+    height: 28px;
+    position: absolute;
+    top: -7.5px;
+    left: -12px;
+    z-index: -1;
+    display: none;
+    transition: all 1ms ease;
+}
+/* -----------------------Overlay Sliders---------------------- */
+.overlay__items li:nth-child(1):hover ~ .overlay__slider{
+    display: block;
+} 
+.overlay__items li:nth-child(2):hover ~ .overlay__slider{
+    display: block;
+    top: 24.5px;
+} 
+.overlay__items li:nth-child(3):hover ~ .overlay__slider{
+    display: block;
+    top: 56px;
+} 
+.overlay__items li:nth-child(4):hover ~ .overlay__slider{
+    display: block;
+    top: 88px;
+} 
+.overlay__items li:nth-child(5):hover ~ .overlay__slider{
+    display: block;
+    top: 121px;
+} 
+.overlay__items li:nth-child(6):hover ~ .overlay__slider{
+    display: block;
+    top: 152px;
+} 
+.overlay__items li:nth-child(7):hover ~ .overlay__slider{
+    display: block;
+    top: 185px;
+} 
+.overlay__items li:nth-child(8):hover ~ .overlay__slider{
+    display: block;
+    top: 217px;
+} 
+.overlay__items li:nth-child(9):hover ~ .overlay__slider{
+    display: block;
+    top: 249px;
+} 
+.overlay__items li:nth-child(10):hover ~ .overlay__slider{
+    display: block;
+    top: 281px;
+} 
+.overlay__items li:nth-child(11):hover ~ .overlay__slider{
+    display: block;
+    top: 313px;
+} 
+.overlay__items li:nth-child(12):hover ~ .overlay__slider{
+    display: block;
+    top: 344px;
+} 
+.overlay__items li:nth-child(13):hover ~ .overlay__slider{
+    display: block;
+    top: 377px;
+} 
+.overlay__items li:nth-child(14):hover ~ .overlay__slider{
+    display: block;
+    top: 409px;
+} 
+.overlay__items li:nth-child(15):hover ~ .overlay__slider{
+    display: block;
+    top: 442px;
+    height: 44px;
+} 
+
+
+ 
+
+

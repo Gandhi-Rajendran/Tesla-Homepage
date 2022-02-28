@@ -1,0 +1,89 @@
+:root{
+    --text-color: rgb(58, 61, 66);
+    --font-family: 'Rubik', sans-serif;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    padding: 14px 27px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: fixed;
+}
+.header__logo svg{
+    width: 100px;
+    color: var(--text-color);
+}
+.header a{
+    text-decoration: none;
+    margin: 12px;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-size: 13px;
+}
+.header__nav{
+    position: relative;
+}
+.header__slider{
+    background-color: rgba(23, 23, 23, 0.1);
+    z-index: -1;
+    width: 62px;
+    height: 28px;
+    border-radius: 12px;
+    position: absolute;
+    top: -4.2px;
+    left: 3.5px;
+    transition: all 2s ease-in-out;
+    display: none;
+}
+/* ---------------------- Main-Menu-Slider ------------------------ */
+.header__nav--main>a:nth-child(1):hover ~ .header__slider{
+    display: block;
+}
+.header__nav--main>a:nth-child(2):hover ~ .header__slider{
+    display: block;
+    left: 80px;
+}
+.header__nav--main>a:nth-child(3):hover ~ .header__slider{
+    display: block;
+    left: 155px;
+}
+.header__nav--main>a:nth-child(4):hover ~ .header__slider{
+    display: block;
+    left: 230px;
+}
+.header__nav--main>a:nth-child(5):hover ~ .header__slider{
+    display: block;
+    width: 76px;
+    left: 306px;
+}
+.header__nav--main>a:nth-child(6):hover ~ .header__slider{
+    display: block;
+    width: 86px;
+    left: 396px;
+}
+/* ---------------------- Sub-Menu-Slider ------------------------ */
+.header__nav--sub>a:nth-child(1):hover ~ .header__slider{
+    display: block;
+    width: 48px;
+}
+.header__nav--sub>a:nth-child(2):hover ~ .header__slider{
+    display: block;
+    width: 70px;
+    left: 62px;
+}
+.header__nav--sub>a:nth-child(3):hover ~ .header__slider{
+    display: block;
+    width: 48px;
+    left: 143px;
+}
+/* ---------------------- Sub-Menu-Mobile ------------------------ */
+.header__nav--mobile{
+    display: none;
+}

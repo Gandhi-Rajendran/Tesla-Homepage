@@ -1,0 +1,121 @@
+.container{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+.container__section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    scroll-snap-align: start;
+}
+.container__section#model-3{
+    background-image: url(Model3.webp);
+}
+.container__section#model-Y{
+    background-image: url(ModelY.webp);
+}
+.container__section#model-S{
+    background-image: url(ModelS.webp);
+}
+.container__section#model-X{
+    background-image: url(ModelX.webp);
+}
+.container__section#solar-panels{
+    background-image: url(SolarPanels.webp);
+}
+.container__section#solar-roof{
+    background-image: url(SolarRoof.jpg);
+}
+.container__section#accessories{
+    background-image: url(Accessories.webp);
+}
+.container__header{
+    text-align: center;
+    margin-top: 92px;
+    color: var(--text-color);
+}
+.container__title{
+    font-size: 38px;
+    font-weight: 420;
+    margin: 0%;
+}
+.container__text{
+    margin: 4px;
+    font-size: 14px;
+    color: var(--text-color);
+}
+.container__text-link{
+    color: var(--text-color);
+}
+/* -----------------Arrow Down------------------- */
+.container__down-arrow{
+    margin-top: 30px;
+    width: 15px;
+    text-align: center;
+    position: absolute;
+    left: 46%;
+    top: 70px;
+    animation: arrow-jump 1.5s ease-in-out infinite;
+}
+/* -----------------Arrow Down Animations------------------- */
+@keyframes arrow-jump {
+    0%{
+        top: 70px;
+    }
+    50%{
+        top: 78px;
+    }
+    75%{
+        top: 70px;
+    }
+    100%{
+        top: 74px;
+    }
+}
+/* -----------------Footer------------------- */
+.container__footer{
+    position: relative;
+    margin-bottom: 80px;
+}
+.container__btn{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    margin: 12px;
+    padding: 12px 60px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.container__btn:hover{
+    cursor: pointer;
+}
+.container__btn--dark{
+    background-color: rgba(20, 20, 20, 0.9);
+}
+.container__btn--light{
+    background-color: rgba(244, 244, 244, 0.65);
+    color: grey;
+}
+/* -----------------Footer End------------------- */
+.footer--end{
+    text-align: center;
+    margin: 0;
+    padding: 25px;
+}
+.footer__list{
+    margin-top: 10px;
+}   
+.footer__list a{
+    padding: 6px;
+    font-family: var(--font-family);
+    font-size: 10px;
+    text-decoration: none;
+}
